@@ -30,7 +30,7 @@ void listBooks(FILE*fp){
     rewind(fp);
     while(fread(&b,sizeof(b),1,fp)==1)
     {
-        printf("ID:%d,Title:%s,Author:%s,copies:%d\n",b.id,b.tilte,b.author,b.copies);
+        printf("ID:%d,Title:%s,Author:%s,copies:%d\n",b.id,b.title,b.author,b.copies);
 
     }
 }
